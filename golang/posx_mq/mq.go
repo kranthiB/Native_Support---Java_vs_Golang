@@ -1,4 +1,4 @@
-package posix_mq
+package posx_mq
 
 import (
 	"bytes"
