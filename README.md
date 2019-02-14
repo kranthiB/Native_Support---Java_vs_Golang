@@ -21,6 +21,7 @@ Let's compare by executing the methods
 - Now its time to generate **libGetMessage.so**, the command to execute is *gcc -I (path-to-java)/include -I (path-to-java)/include/linux -o libGetMessage.so -shared -fPIC GetMessage.c -lrt*
 - In the runtime, we just need **GetMessage.class** and **libGetMessage.so** and the command for receiving messages from queue is *java -Djava.library.path=(path-of-executable-files) GetMessage*
 - For usage of [mq_open(3)](http://man7.org/linux/man-pages/man3/mq_open.3.html) and [mq_close(3)](http://man7.org/linux/man-pages/man3/mq_close.3.html), check the files [PosixMQ.java](https://github.com/kranthiB/Native_Support---Java_vs_Golang/blob/master/java/PosixMQ.java) , [PosixMQ.c](https://github.com/kranthiB/Native_Support---Java_vs_Golang/blob/master/java/PosixMQ.c)
+- To send messages to the queue , have a look on [SeneMessage.java](https://github.com/kranthiB/Native_Support---Java_vs_Golang/blob/master/java/SendMessage.java), [SendMessage.c](https://github.com/kranthiB/Native_Support---Java_vs_Golang/blob/master/java/SendMessage.c)
 
 
 ## Golang
