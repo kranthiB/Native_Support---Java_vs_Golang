@@ -11,7 +11,7 @@ const maxTickNum = 10
 
 func main() {
 	oflag := posix_mq.O_RDONLY
-	mq, err := posix_mq.NewMessageQueue("/posix_mq_example", oflag, 0666, nil)
+	mq, err := posix_mq.NewMessageQueue("/test_queue", oflag, 0666, nil)
 	if err != nil {
 		log.Fatal(err)
 	}
