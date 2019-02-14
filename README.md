@@ -29,3 +29,6 @@ Let's compare by executing the methods
 - [wrapper.go](https://github.com/kranthiB/Native_Support---Java_vs_Golang/blob/master/golang/posx_mq/wrapper.go) contains C language code which contains logic related to [mq_open(3)](http://man7.org/linux/man-pages/man3/mq_open.3.html), [mq_send(3)](http://man7.org/linux/man-pages/man3/mq_send.3.html), [mq_receive(3)](http://man7.org/linux/man-pages/man3/mq_receive.3.html), [mq_close(3)](http://man7.org/linux/man-pages/man3/mq_close.3.html)
 - [receiver.go](https://github.com/kranthiB/Native_Support---Java_vs_Golang/blob/master/golang/receiver.go) / [sender.go](https://github.com/kranthiB/Native_Support---Java_vs_Golang/blob/master/golang/sender.go) contains logic to receive/send messages to/from Posix queue through [mq.go](https://github.com/kranthiB/Native_Support---Java_vs_Golang/blob/master/golang/posx_mq/mq.go) and [wrapper.go](https://github.com/kranthiB/Native_Support---Java_vs_Golang/blob/master/golang/posx_mq/wrapper.go)
 - To generate executable , in the go environment(command - "go env")  we need to cross verify the properties **CGO_ENABLED** and **CGO_LDFLAGS** and the values should hold **1** and **-g -O2 -lrt**
+
+### Out of golang and java , go is very flexible / maintainable and special instructions like javah / jni are  not requried.
+
